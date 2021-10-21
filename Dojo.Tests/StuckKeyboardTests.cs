@@ -36,6 +36,7 @@ namespace Dojo.Tests
         [InlineData("mmmoooo", "mooo", true)]
         [InlineData("mmmoooo", "moooo", true)]
         [InlineData("mmmoooonn", "moon", true)]
+        [InlineData("mmmoooonan", "moon", false)]
         [InlineData("aaaab", "a", false)]
         [InlineData("abc", "ab", false)]
         [InlineData("abccccccc", "ab", false)]
