@@ -15,15 +15,19 @@ namespace Dojo.Tests
 
             Return the number of land cells from which we cannot go off the matrix.
 
-         Example
+        Example
              map = [
                         [0, 0, 0, 1],
                         [0, 1, 1, 0],
                         [0, 1, 1, 0],
                         [0, 0, 0, 0]
                      ]
-         Output 
+        Output 
             4
+        
+        Explanation
+            There's 4 land squares in the middle from which we cannot walk off the matrix.
+
          */
 
         private readonly EnclosedIslands sut = new EnclosedIslands();
