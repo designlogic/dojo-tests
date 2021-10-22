@@ -25,5 +25,23 @@ namespace Dojo.Tests
 
             return multiDimensionalArray;
         }
+
+        public static string Visualize(this int[,] values)
+        {
+            var output = new StringBuilder();
+            output.AppendLine("--------------------------------");
+            for (int row = 0; row < values.GetLength(0); row++)
+            {
+                for (int column = 0; column < values.GetLength(1); column++)
+                {
+                    output.Append($"{values[row, column]} ");
+                }
+
+                output.AppendLine();
+            }
+
+            output.AppendLine("--------------------------------");
+            return output.ToString();
+        }
     }
 }
